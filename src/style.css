@@ -114,3 +114,28 @@ section img.layer-one {
     font-size:1em;
     color:#fff;
 }
+.content .range-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5em;
+}
+.content .range-container .form-label {
+    color: #fff;
+}
+.content .range-container input[type=”range”]::-webkit-slider-thumb,
+.content .range-container input[type=”range”]::-moz-range-thumb,
+.content .range-container input[type=”range”]::-ms-thumb {
+
+}
+
+.content .range-container input[type=”range”]::-webkit-slider-runnable-track ,
+.content .range-container input[type=”range”]::-moz-range-track ,
+.content .range-container input[type=”range”]::-ms-track {
+
+}
+
+
+
+
+
+

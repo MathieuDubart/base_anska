@@ -5,6 +5,7 @@ let layer_three = document.getElementById('layer-three');
 let page_title = document.getElementById('page-title');
 let discover_btn = document.getElementById('discover-btn');
 let page_content = document.getElementById('content');
+let example_range = document.getElementById('exampleRange');
 
 window.addEventListener('scroll',e => {
     let value = window.scrollY;
@@ -16,3 +17,9 @@ window.addEventListener('scroll',e => {
     discover_btn.style.marginTop = value*1.5+'px';
     header.style.top = value*0.5+'px';
 });
+
+let rangeValue;
+
+example_range.addEventListener('change', e=>{
+    rangeValue =  example_range.value;
+})
