@@ -1,51 +1,217 @@
 <!doctype html>
-<html>
-    <head>
-        <title>Parallax scrolling</title>
-        <link rel="stylesheet" type="text/css" href="src/style.css">
-    </head>
-    <body>
-        <header>
-            <a href="#" class="logo">Logo</a>
-            <ul>
-                <li><a href="#" class="active">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Work</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </header>
-        <section>
-            <img src="img/layer_3.png" id="layer-three">
-            <img src="img/layer_2.png" id="layer-two">
-            <h2 id="page-title" class="page-title">Parallax scrolling</h2>
-            <a href="#content" class="discover-btn" id="discover-btn">Explorer</a>
-            <img src="img/layer_1.png" id="layer-one" class="layer-one">
-        </section>
-        <div class="content" id="content">
-            <h2>Parallax Scrolling Effects</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pharetra fringilla nunc id congue. Nulla maximus ex massa, quis tempus metus dapibus in. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-                Pellentesque vitae varius ante, vel mollis arcu. Etiam a nibh vitae magna venenatis maximus at venenatis est. Integer lectus tortor, finibus id maximus id, blandit ut purus. Praesent luctus, lacus vel cursus sagittis, metus nisl mollis nisi, ac condimentum nisl eros maximus lacus.
-                Nulla ut luctus libero. Nam dictum finibus felis in varius. Maecenas volutpat mollis mattis. Vestibulum ut sapien quis sapien egestas convallis. Fusce interdum felis ante, non lacinia ipsum euismod commodo. Fusce ullamcorper sem id lacinia venenatis, lacus vel cursus sagittis, metus nisl mollis nisi.</p> <br>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Anska MVP</title>
+    <link href="src/style.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/681b926301.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="custom-container hide-scrollbar anska">
+        <div class="custom-wrapper">
+            <div class="container-fluid custom-slide hero-slide" id="home">
+                <div class="row">
+                    <div class="col-md-12 custom-navbar"> LOGO </div>
+                    <div class="col-md-12 hero-title">
+                        <h1> ANSKA </h1>
+                    </div>
+                    <div class="col-md-12 col-lg-9 hero-introduction">
+                        Anska, âgée de 18 ans, est passionnée d’écriture et de cinéma. Son rêve est de pouvoir un jour rejoindre Paris afin d’écrire des films comme ceux des DVD que collectionne son père. Pour le moment, elle vit dans la plaine de Yakoutsk, au fond de la Sibérie orientale et travaille dans une mine de la région. Elle n’a jamais eu de réel accès à l’information, elle n’en a donc pas conscience.
 
-            <div class="range-container">
-                <label for="exampleRange" class="form-label">Example range:  <output name="exampleOutputName" id="exampleOutput">50000</output> tons of CO2</label>
-                <input type="range" class="example-range" value="50000" min="0" max="100000" step="1" name="exampleRangeName" id="exampleRange" oninput="exampleOutput.value = exampleRange.value">
+                        Un soir, lors d’un repas de famille, les parents d’Anska lui annoncent qu’elle et son petit frère doivent rejoindre le programme “ETSP” qui consiste à extraire les habitants de Yakoutsk vers des terres plus sûres suites aux fréquents glissements de terrains survenus. Il s’agit d’un cortège illégal organisé par les habitants de la ville.
+                        Le soir même, elle prépare son sac en emportant quelques affaires: quelques vêtements, des jouets pour son frère, des provisions ainsi qu’un carnet et un stylo dans lequel elle raconte son périple.
+                    </div>
+                    <div class="col-md-12 col-lg-3 nav-arrow">
+                        <a href="#day_one"> <i class="fa-solid fa-arrow-right-long fa-xl"></i> </a>                 </div>
+                    <div class="col-md-12 hero-sound-line">
+                        <b> Lorem ipsum dolor sit amet, consectetur adipiscing elit. <i class="fa-solid fa-volume-high"></i> </b>
+                    </div>
+                </div>
             </div>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pharetra fringilla nunc id congue. Nulla maximus ex massa, quis tempus metus dapibus in. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-                Pellentesque vitae varius ante, vel mollis arcu. Etiam a nibh vitae magna venenatis maximus at venenatis est. Integer lectus tortor, finibus id maximus id, blandit ut purus. Praesent luctus, lacus vel cursus sagittis, metus nisl mollis nisi, ac condimentum nisl eros maximus lacus.
-                Nulla ut luctus libero. Nam dictum finibus felis in varius. Maecenas volutpat mollis mattis. Vestibulum ut sapien quis sapien egestas convallis. Fusce interdum felis ante, non lacinia ipsum euismod commodo. Fusce ullamcorper sem id lacinia venenatis, lacus vel cursus sagittis, metus nisl mollis nisi.</p> <br>
+            <div class="container-fluid custom-slide" id="day_one">
+                <div class="row">
+                    <div class="col-md-12 day-row">
+                        <h2> Jour 1 </h2>
+                        <h3> Yakoutsk, Russie - 08h56: </h3>
+                    </div>
+                    <div class="col-md-12 col-lg-6 block-left">
+                        Je viens d’arriver au point de départ de l’expédition. Sur le chemin, j’ai aperçu notre voiture attitrée et notre guide de survie. Mes parents m’ont chargé de veiller sur Sialuk, mon petit frère. Je compte plus d’une vingtaine de voitures présentes dans le cortège et personne n’a l’air de savoir ce qu’il va se passer. D’ailleurs, je crois apercevoir docteur Ataneq au loin.
+                    </div>
+                    <div class="col-md-12 col-lg-6 block-right">
+                        Lorsque l’on entre dans notre voiture, il nous rejoint avec cet air abattu. Ataneq a dû quitter sa famille pour aller aider le corps médical du sud de la Sibérie. Il essaye tout de même de nous rassurer à propos de la situation…
+                        Lors du démarrage de la voiture, je jette un dernier coup d'œil vers la ville, en ayant l’espoir d’un jour pouvoir retrouver mes terres et mes quelques amis…
+                    </div>
+                </div>
+            </div>
 
+            <div class="container-fluid custom-slide"  id="day_two">
+                <div class="row">
+                    <div class="col-md-12 day-row">
+                        <h2> Jour 2 </h2>
+                        <h3> Nokhoroi, Russie - 12h07: </h3>
+                    </div>
+                    <div class="col-md-12 col-lg-6 block-right">
+                        La grêle s’écrase contre la toiture de la voiture. J’ai demandé au docteur Ataneq quelles étaient les causes de ces glissements de terrain. Il nous a expliqué que notre sol était constitué de couches de glace, il appelle ça le Permafrost. De tout son discours, j’ai retenu que le sol de notre continent était en train de dégeler, et que cela pouvait libérer jusqu’à 1,6 milliards de tonnes de gaz à effet de serre par an, sur plusieurs centaines d’années. Ataneq a donné l’exemple d’un congélateur géant.
+                    </div>
+                    <div class="col-md-12 col-lg-6 block-left">
+                        JAUGE COMPARATIVE
+                    </div>
+                </div>
+            </div>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pharetra fringilla nunc id congue. Nulla maximus ex massa, quis tempus metus dapibus in. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-                Pellentesque vitae varius ante, vel mollis arcu. Etiam a nibh vitae magna venenatis maximus at venenatis est. Integer lectus tortor, finibus id maximus id, blandit ut purus. Praesent luctus, lacus vel cursus sagittis, metus nisl mollis nisi, ac condimentum nisl eros maximus lacus.
-                Nulla ut luctus libero. Nam dictum finibus felis in varius. Maecenas volutpat mollis mattis. Vestibulum ut sapien quis sapien egestas convallis. Fusce interdum felis ante, non lacinia ipsum euismod commodo. Fusce ullamcorper sem id lacinia venenatis, lacus vel cursus sagittis, metus nisl mollis nisi.</p> <br>
+            <div class="container-fluid custom-slide"  id="day_three">
+                <div class="row">
+                    <div class="col-md-12 day-row">
+                        <h2> Jour 3 </h2>
+                        <h3> Uritskoye, Russie - 10h00: </h3>
+                    </div>
+                    <div class="col-md-12 col-lg-6 block-left">
+                        Nous roulons depuis maintenant 3 jours. Les guides disent que nous avançons à un bon rythme, ce sont eux qui chassent et qui nous nourrissent. Nous n'avons rencontré aucun problème jusqu'à maintenant. Mais j’ai l’impression que quelque chose tracasse Ataneq.
 
+                        Au cours d’une discussion, il nous a indiqué que notre sol était composé de 3 couches: la couche active, la couche de permafrost et la couche de sol non gelée. Cette deuxième couche, celle du permafrost, serait censée être constamment gelée et devrait retenir prisonnier d’anciens virus très dangereux pour nous. Son dégèle, et donc sa fonte, libérerait beaucoup de dioxyde de carbone et de méthane qui pourraient dramatiquement accentuer le réchauffement climatique.
+                    </div>
+                    <div class="col-md-12 col-lg-6 block-right">
+                        Un peu plus tard dans la journée, nous apercevons sur notre chemin un corps sans vie, puis un deuxième, puis un troisième,...ça ne s’arrête plus. Des maisons se sont effondrées,  je vois l’anéantissement sur le visage des villageois, leurs pleurs, leur peine. C’est une vision d’horreur qui restera à jamais dans ma mémoire.
+                        + CARTE TEMPERATURES
+                    </div>
+                </div>
+            </div>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pharetra fringilla nunc id congue. Nulla maximus ex massa, quis tempus metus dapibus in. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-                Pellentesque vitae varius ante, vel mollis arcu. Etiam a nibh vitae magna venenatis maximus at venenatis est. Integer lectus tortor, finibus id maximus id, blandit ut purus. Praesent luctus, lacus vel cursus sagittis, metus nisl mollis nisi, ac condimentum nisl eros maximus lacus.
-                Nulla ut luctus libero. Nam dictum finibus felis in varius. Maecenas volutpat mollis mattis. Vestibulum ut sapien quis sapien egestas convallis. Fusce interdum felis ante, non lacinia ipsum euismod commodo. Fusce ullamcorper sem id lacinia venenatis, lacus vel cursus sagittis, metus nisl mollis nisi.</p> <br>
+            <div class="container-fluid custom-slide"  id="day_five">
+                <div class="row">
+                    <div class="col-md-12 day-row">
+                        <h2> Jour 5 </h2>
+                        <h3> Kudu-Kyuyol, Russie - 12h36: </h3>
+                    </div>
+                    <div class="col-md-12 col-lg-6 block-right">
+                        Nous venons de reprendre la route depuis notre pause déjeuner. Je n’ai pas pu tenir à jour mon carnet ces trois derniers jours car j’ai dû m'occuper de mon petit frère. Il ne se sent pas bien, a de la fièvre et des frissons. Même Ataneq a du mal à le diagnostiquer.
+                    </div>
+                    <div class="col-md-12 col-lg-6 block-left">
+                        Je m’inquiète même s'il est là pour me rassurer. Nous sommes ralentis par les terrains impraticables et la mauvaise météo qui rend nos trajets plus longs et plus difficiles.
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid custom-slide"  id="day_six">
+                <div class="row">
+                    <div class="col-md-12 day-row">
+                        <h2> Jour 6 </h2>
+                        <h3> Dikimdya, Russie - 16h15: </h3>
+                    </div>
+                    <div class="col-md-12 col-lg-6 block-left">
+                        Aujourd’hui, nous n’avons que très peu avancé. Nous sommes tombés face à un cratère qui nous a coupé la route. Nous avons dû faire tout un détour pour arriver à Chapayevo. Concernant mon petit frère, nous ne remarquons aucune amélioration pour le moment, j'espère que son état va se stabiliser..
+                    </div>
+                    <div class="col-md-12 col-lg-6 block-right">
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid custom-slide"  id="day_nine">
+                <div class="row">
+                    <div class="col-md-12 day-row">
+                        <h2> Jour 9 </h2>
+                        <h3> Dikimdya, Russie - 16h15: </h3>
+                    </div>
+                    <div class="col-md-12 col-lg-6 block-right">
+                        L’état de Sialuk s'aggrave. Il a développé des troubles respiratoires et Ataneq n’a pas l’air de savoir quoi faire. J’ai surpris une discussion avec l’un des gardes, dans laquelle il disait avoir peur que mon frère soit contaminé par l’Anthrax, une maladie ancienne qu’aurait pû contracter une des bêtes sauvages que nous avons chassée et mangée. Le guide a décidé de mettre notre trajet sur pause pour quelques jours, en attendant que l’état de mon frère s'améliore.
+                    </div>
+                    <div class="col-md-12 col-lg-6 block-left">
+                        PICTOS ET STATS ANTHRAX
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid custom-slide"  id="day_eleven">
+                <div class="row">
+                    <div class="col-md-12 day-row">
+                        <h2> Jour 11 </h2>
+                        <h3> Belletskiy, Russie - 8h15: </h3>
+                    </div>
+                    <div class="col-md-12 col-lg-6 block-left">
+                        Je n’ai même plus la force d’écrire.. Sialuk est mort cette nuit.. depuis plusieurs jours il se battait contre ce virus, mais ça n’a pas suffit.
+                        Je crie de douleur, je n’ai pas fermé l'œil de la nuit. Et mes parents, quand ils vont l’apprendre, je n'imagine même pas…
+                    </div>
+                    <div class="col-md-12 col-lg-6 block-right">
+                        Mon cœur est déchiré... Ataneq est tout aussi dévasté, il s’en veut de ne rien avoir pu faire. Le problème, c’est qu’il était impossible de le guérir. il ne sera pas le seul à être touché, il y en aura sûrement d'autres. J’ai l’impression que tout tourne au drame en ce moment.
+                        Il va me manquer...
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid custom-slide"  id="day_fifteen">
+                <div class="row">
+                    <div class="col-md-12 day-row">
+                        <h2> Jour 15 </h2>
+                        <h3> Lebediny, Russie - 17h32: </h3>
+                    </div>
+                    <div class="col-md-12 col-lg-6 block-right">
+                        Déjà 2 semaines que je suis partie de chez moi. Tout le monde commence à perdre espoir. Nous sommes épuisés par ce trajet et le manque de nourriture se fait ressentir. Il y a de moins en moins d’animaux, ils ne se montrent plus, ce qui n’arrange pas les guides pour la chasse. C’est ce qu’ils m’expliquent avec Ataneq : la faune et la flore est de moins en moins diverse et présente à cause de la fonte du permafrost.
+                    </div>
+                    <div class="col-md-12 col-lg-6 block-left">
+                        GRAPHIQUE EVOLUTION FAUNE FLORE
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid custom-slide">
+                <div class="row">
+                    <div class="col-md-12 day-row"  id="day_twentyone">
+                        <h2> Jour 21 </h2>
+                        <h3> Quelques kilomètres avant Dzhalinda, Russie - 15H44: </h3>
+                    </div>
+                    <div class="col-md-12 col-lg-6 block-left">
+                        Ça fait six jours que nous roulons. De temps en temps, nous faisons des escales dans des villages, ici et là. D'ailleurs, nous avons été convié à manger chez des villageois, qui ont bien voulu nous héberger un soir. Ce poulet m’a rappelé ceux que ma mère cuisinait. Je crois qu’on a parcouru sept-cent kilomètres depuis notre départ de Lebediny.                    </div>
+                    <div class="col-md-12 col-lg-6 block-right">
+                        D’après les guides, nous ne sommes plus très loin du dernier village. Demain à la nuit tombée, nous traverserons la frontière chinoise. Personne ne sait ce qui nous attend là-bas mais ça sera toujours mieux qu’ici.
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid custom-slide" id="day_twentytwo">
+                <div class="row">
+                    <div class="col-md-12 day-row">
+                        <h2> Jour 22 </h2>
+                        <h3> Dzhalinda - 23H38: </h3>
+                    </div>
+                    <div class="col-md-12 col-lg-6 block-right">
+                        Il fait complètement nuit, le village est calme. Avec les autres membres du groupe nous avons réussi à voler un bateau pour traverser la rivière Amour. Je ne sais pas si c’est à cause du froid, mais je commence à me sentir de plus en plus mal, j’ai des maux de tête, des tremblements et mon envie de vomir grandit. Ataneq insiste pour me faire un diagnostique. Selon lui, c’est sans doute le poulet que nous avons mangé, qui a être contaminé par les virus relâchés par la fonte du permafrost. C’est une hypothèse probable, en sachant que c’est arrivé à d’autres membres du groupe quelques jours auparavant.
+                    </div>
+                    <div class="col-md-12 col-lg-6 block-left">
+                        Je ne peux m'empêcher de penser à mon frère et ce qu’il lui est arrivé, j’ai peur… Nous débarquons sur la jetée et reprenons la route avec nos lampes frontales. Mes parents et mon frère me manquent terriblement. Il est trop tard pour revenir en arrière. Nous voilà en Chine, je me demande quelle sera la suite de ce périple, mais j'espère que nous serons en sécurité ici.
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid conclusion-slide" id="conclusion">
+                <div class="row">
+                    <div class="col-md-12 conclusion-title">
+                        CONCLUSION
+                    </div>
+                    <div class="col-md-12 col-lg-9 conclusion-content">
+                        C’est comme ça que se termine le récit d’Anska. Aucune note suivant celle du 22ème jour n’a été retrouvée. Selon nos estimations, ça serait seulement une semaine plus tard que son corps aurait été retrouvé au fond d’un fossé, aux côtés de ceux de ses compagnons de route. Nous ne connaissons pas les causes de son décès, mais les spécialistes s’accordent à dire que le groupe aurait été victime d’une attaque ciblée orchestrée par un groupe de conservateurs du nord de la Chine.
+                    </div>
+                    <div class="col-md-12 col-lg-3 nav-arrow">
+                        <a href="#home"> <i class="fa-solid fa-arrow-left-long fa-xl"></i> </a>
+                    </div>
+                </div>
+            </div>
         </div>
-    </body>
-    <script src="src/script.js" rel="script"></script>
+    </div>
+
+    <div id="custom-footer">
+        <div class="footer-left">
+
+        </div>
+        <div class="footer-middle">
+
+        </div>
+        <div class="footer-right">
+
+        </div>
+    </div>
+<script src="src/script.js" type="text/javascript"></script>
+</body>
+
 </html>
