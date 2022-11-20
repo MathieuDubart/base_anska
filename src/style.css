@@ -122,8 +122,114 @@
     align-items: center;
 }
 
+.anska .custom-slide .block-right {
+    display: flex;
+    flex-direction: column;
+}
+.anska .temp-map {
+    height: 80vh;
+    width: 100vh;
+}
 
+/* --------- DEER DEATHS --------- */
+@property --num-one {
+    syntax: "<integer>";
+    initial-value: 2200;
+    inherits: false;
+}
 
+.deer-deaths{
+    animation: counter 5s ease-in-out 0s 1 normal forwards;;
+    counter-reset: num-one var(--num-one);
+    padding: 2rem;
+}
+.deer-deaths::after {
+    content: counter(num-one);
+}
+
+@keyframes counter {
+    from {
+        --num-one: 2200;
+    }
+    to {
+        --num-one: 2300;
+    }
+}
+
+/* --------- Persons hospital --------- */
+@property --num-two {
+    syntax: "<integer>";
+    initial-value: 2200;
+    inherits: false;
+}
+
+.persons-hospital{
+    animation: counter 5s ease-in-out 0s 1 normal forwards;;
+    counter-reset: num-two var(--num-two);
+    padding: 2rem;
+}
+.persons-hospital::after {
+    content: counter(num-two);
+}
+
+@keyframes counter {
+    from {
+        --num-two: 0;
+    }
+    to {
+        --num-two: 90;
+    }
+}
+
+/* --------- Children Hospital --------- */
+@property --num-three {
+    syntax: "<integer>";
+    initial-value: 2200;
+    inherits: false;
+}
+
+.children-hospital{
+    animation: counter 5s ease-in-out 0s 1 normal forwards;;
+    counter-reset: num-three var(--num-three);
+    padding: 2rem;
+}
+.children-hospital::after {
+    content: counter(num-three);
+}
+
+@keyframes counter {
+    from {
+        --num-three: 0;
+    }
+    to {
+        --num-three: 90;
+    }
+}
+
+/* --------- Persons deaths --------- */
+@property --num-four {
+    syntax: "<integer>";
+    initial-value: 2200;
+    inherits: false;
+}
+
+.human-deaths{
+    animation: counter 5s ease-in-out 0s 1 normal forwards;;
+    counter-reset: num var(--num-four);
+    padding: 2rem;
+}
+.human-deaths::after {
+    content: counter(num-four);
+}
+
+@keyframes counter {
+    from {
+        --num-four: 0;
+    }
+    to {
+        --num-four: 1;
+    }
+}
 @media screen and (min-width: 1920px) {
     .anska .custom-wrapper .custom-slide .row .block-left,
     .anska .custom-wrapper .custom-slide .row .block-right {
