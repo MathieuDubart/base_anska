@@ -21,7 +21,7 @@
 }
 
 .anska .row {
-    height: 100%;
+    /*height: 100%;*/
     font-size: 1.2em;
     color: #fff;
 }
@@ -106,13 +106,16 @@
     display: flex;
     flex-direction: row;
 }
+.anska .custom-wrapper .custom-slide .place-row {
+    margin-top: 5em;
+    height: 120px;
+}
 .anska .custom-wrapper .custom-slide .content-row {
     display: flex;
-    flex-direction: column;
 }
-.anska .custom-wrapper .custom-slide .row .day-row h2{
+.anska .custom-wrapper .custom-slide .row .day-row {
     transform: rotate(270deg);
-    width: 100%;
+    width: 13em;
 }
 
 .anska .custom-wrapper .custom-slide .row .title-row .day-row{
@@ -140,10 +143,6 @@
 .anska .custom-slide .block-right {
     display: flex;
     flex-direction: column;
-}
-
-.anska .donut-chart g {
-    color: white;
 }
 
 .anska .temp-map {
