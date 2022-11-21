@@ -102,6 +102,22 @@
 .custom-navbar {
     padding-top: 3em;
 }
+.anska .custom-wrapper .custom-slide {
+    display: flex;
+    flex-direction: row;
+}
+.anska .custom-wrapper .custom-slide .content-row {
+    display: flex;
+    flex-direction: column;
+}
+.anska .custom-wrapper .custom-slide .row .day-row h2{
+    transform: rotate(270deg);
+    width: 100%;
+}
+
+.anska .custom-wrapper .custom-slide .row .title-row .day-row{
+    width: 100%;
+}
 
 .anska .custom-wrapper .conclusion-slide .row .nav-arrow,
 .anska .custom-wrapper .hero-slide .row .nav-arrow {
@@ -113,7 +129,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 3em;
 }
 
 .anska .custom-wrapper .custom-slide .row .block-right {
@@ -126,6 +141,11 @@
     display: flex;
     flex-direction: column;
 }
+
+.anska .donut-chart g {
+    color: white;
+}
+
 .anska .temp-map {
     height: 80vh;
     width: 100vh;

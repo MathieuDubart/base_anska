@@ -1,4 +1,4 @@
-require('dotenv').config()
+// require('dotenv').config()
 
 let container = document.querySelector('.custom-container');
 let layers = document.querySelectorAll('.custom-layer');
@@ -24,16 +24,23 @@ google.charts.load("current", {packages:["corechart"]});
 google.charts.setOnLoadCallback(drawChart);
 function drawChart() {
     var data = google.visualization.arrayToDataTable([
-        ['', 'Gigatonnes de CO2'],
-        ['Contenues dans le Permafrost',     1600],
-        ['Relâchées en 2022', 32]
+        ["", "Gigatonnes de CO2"],
+        ["Contenues dans le Permafrost",     1600],
+        ["Émises par l'homme en 2022", 32]
     ]);
 
     var options = {
-        title: 'Émissions de CO2 en Gigatonnes (Gt)',
+        title: 'Quantité de CO2 en Gigatonnes (Gt)',
         pieHole: 0.4,
         backgroundColor: 'transparent',
-
+        titleTextStyle: {
+            color: "white",               // color 'red' or '#cc00cc'
+            fontName: "Red Hat Text",    // 'Times New Roman'
+            // fontSize: 25,               // 12, 18
+        },
+        legendTextStyle: {
+            color: "white"
+        }
     };
 
     var chart = new google.visualization.PieChart(document.getElementById('donutchart'));

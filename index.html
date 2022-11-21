@@ -34,10 +34,15 @@
             </div>
 
             <div class="container-fluid custom-slide" id="day_one">
-                <div class="row">
+                <div class="row title-row">
                     <div class="col-md-12 day-row">
                         <h2> Jour 1 </h2>
-                        <h3> Yakoutsk, Russie - 08h56: </h3>
+                    </div>
+                </div>
+                <div class="row content-row">
+                    <div class="col-md-12 place-row">
+                        <h3> Yakoutsk, Russie </h3>
+                        <h3> 08h56 </h3>
                     </div>
                     <div class="col-md-12 col-lg-6 block-left">
                         Je viens d’arriver au point de départ de l’expédition. Sur le chemin, j’ai aperçu notre voiture attitrée et notre guide de survie. Mes parents m’ont chargé de veiller sur Sialuk, mon petit frère. Je compte plus d’une vingtaine de voitures présentes dans le cortège et personne n’a l’air de savoir ce qu’il va se passer. D’ailleurs, je crois apercevoir docteur Ataneq au loin.
@@ -103,12 +108,15 @@
                 <div class="row">
                     <div class="col-md-12 day-row">
                         <h2> Jour 6 </h2>
-                        <h3> Dikimdya, Russie - 16h15: </h3>
+                    </div>
+                    <div class="col-md-12 place-row">
+                        <h3> Dikimdya, Russie </h3>
+                        <h3> 16h15 </h3>
                     </div>
                     <div class="col-md-12 col-lg-6 block-left">
                         Aujourd’hui, nous n’avons que très peu avancé. Nous sommes tombés face à un cratère qui nous a coupé la route. Nous avons dû faire tout un détour pour arriver à Chapayevo. Concernant mon petit frère, nous ne remarquons aucune amélioration pour le moment, j'espère que son état va se stabiliser..
                     </div>
-                    <div class="col-md-12 col-lg-6 block-right" id="donutchart">
+                    <div class="col-md-12 col-lg-6 block-right donut-chart" id="donutchart">
 
                     </div>
                 </div>
@@ -232,41 +240,42 @@
 <script>
     // ----------------------- script for map ----------------------------//
 
-    // mapboxgl.accessToken = "pk.eyJ1IjoiZWl0aHhtIiwiYSI6ImNsOXBhcmhzNTA1OGMzdnVsbmI4cjQwdGQifQ.K7UvRb_pLkPLVTkF_Zgt0g";
-    //
-    // const map = new mapboxgl.Map({
-    //     container: 'map',
-    //     style: '',
-    //     center: [4.5, 45.5],
-    //     zoom: 7
-    // });
-    // let activeDeptId = null;
-    //
-    // map.on('load', async () => {
-    //     fetch('/src/coord/coordinates_2010.geojson').then((response) => response.json()).then((geojsonData) => {
-    //         map.addSource('temperatures', {
-    //             'type': 'geojson',
-    //             'data': geojsonData,
-    //             'generateId': true
-    //         });
-    //
-    //         map.addLayer({
-    //             'id': 'coordinates-layer',
-    //             'type': 'fill',
-    //             'source': 'temperatures',
-    //             'layout': {},
-    //             'paint': {
-    //                 'fill-color': '#777',
-    //                 'fill-opacity': [
-    //                     'case',
-    //                     ['boolean', ['feature-state', 'hover'], false],
-    //                     1,
-    //                     0.5
-    //                 ]
-    //             }
-    //         });
-    //     })
-    // });
+    mapboxgl.accessToken = "pk.eyJ1IjoiZWl0aHhtIiwiYSI6ImNsOXBhcmhzNTA1OGMzdnVsbmI4cjQwdGQifQ.K7UvRb_pLkPLVTkF_Zgt0g";
+
+    const map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/eithxm/claqm8qn0005n14ldojxxlpc6',
+        center: [4.5, 45.5],
+        zoom: 2
+    });
+    let activeDeptId = null;
+
+    map.on('load', async () => {
+        fetch('/src/coord/test.geojson').then((response) => response.json()).then((geojsonData) => {
+            map.addSource('temperatures', {
+                'type': 'geojson',
+                'data': geojsonData,
+                'generateId': true
+            });
+
+            map.addLayer({
+                'id': 'coordinates-layer',
+                'type': 'heatmap',
+                'source': 'temperatures',
+                'layout': {},
+                'paint': {
+                    'heatmap-weight':{
+                        property: ["at", 0, 'temp'],
+                        type: 'exponential'
+                    },
+                    'heatmap-intensity':0.4,
+                    'heatmap-color': '#F00',
+                    'heatmap-radius':1,
+                    'heatmap-opacity': 0.1
+                }
+            });
+        })
+    });
 </script>
 </body>
 
