@@ -21,7 +21,6 @@
 }
 
 .anska .row {
-    /*height: 100%;*/
     font-size: 1.2em;
     color: #fff;
 }
@@ -46,7 +45,7 @@
     width:1200vw;
     transform:rotate(90deg) translateY(-100vh);
     transform-origin:top left;
-    background-color:#333;
+    background-color:#000;
 
 }
 
@@ -84,10 +83,23 @@
     font-family: 'Red Hat Text', sans-serif;
     font-weight: 700;
 }
+
+.anska h4 {
+    font-family: 'Red Hat Text', sans-serif;
+    font-size: 1.3em
+}
+
 .anska .custom-wrapper .container {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.anska .custom-wrapper .custom-slide .title-row h2 {
+    font-size:11em;
+}
+.anska .custom-wrapper .custom-slide .place-row h3 {
+    font-size:3em;
 }
 
 .anska .custom-wrapper .hero-slide .row {
@@ -107,18 +119,25 @@
     flex-direction: row;
 }
 .anska .custom-wrapper .custom-slide .place-row {
-    margin-top: 5em;
-    height: 120px;
+    margin: 5em 0;
+    height: 8em;
 }
 .anska .custom-wrapper .custom-slide .content-row {
     display: flex;
+    height: fit-content;
 }
-.anska .custom-wrapper .custom-slide .row .day-row {
-    transform: rotate(270deg);
+.anska .custom-wrapper .custom-slide .row.title-row .day-row {
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
+    transform: rotate(180deg);
+    text-align:center;
+}
+
+.anska .custom-wrapper .custom-slide .row.title-row .day-row .h2 {
     width: 13em;
 }
 
-.anska .custom-wrapper .custom-slide .row .title-row .day-row{
+.anska .custom-wrapper .custom-slide .row.title-row .day-row{
     width: 100%;
 }
 
@@ -134,16 +153,24 @@
     justify-content: center;
 }
 
+.anska .custom-wrapper .custom-slide .row .block-left,
+.anska .custom-wrapper .custom-slide .row .block-right {
+    height: calc(100vh - 18em);
+}
+
+.anska .custom-wrapper .custom-slide .row .block-left {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    /*flex-direction: column;*/
+}
 .anska .custom-wrapper .custom-slide .row .block-right {
     display:flex;
     justify-content: center;
     align-items: center;
-}
-
-.anska .custom-slide .block-right {
-    display: flex;
     flex-direction: column;
 }
+
 
 .anska .temp-map {
     height: 60vh;
